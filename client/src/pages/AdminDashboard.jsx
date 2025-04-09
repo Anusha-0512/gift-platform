@@ -11,7 +11,7 @@ export default function AdminDashboard() {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/admin/users", {
+        const res = await API.get("/admin/users", {
           headers: { Authorization: `Bearer ${token}` },
         });
         setUsers(res.data);
@@ -24,9 +24,10 @@ export default function AdminDashboard() {
 
   const handleViewSuggestions = async (userId) => {
     try {
-      const res = await axios.get(`http://localhost:5000/api/ai/admin/user-suggestions/${userId}`, {
+      const res = await API.get("/admin/users", {
         headers: { Authorization: `Bearer ${token}` },
       });
+      
       setSelectedSuggestions(res.data);
       setActiveUserId(userId);
     } catch (err) {
@@ -37,7 +38,7 @@ export default function AdminDashboard() {
 
   const handleDelete = async (userId) => {
     try {
-      await axios.delete(`https://gift-platform.onrender.com/api/admin/users/${userId}`, {
+      await API.delete(`/admin/users/${userId}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setUsers(users.filter((u) => u._id !== userId));
