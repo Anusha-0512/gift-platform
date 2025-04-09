@@ -14,9 +14,10 @@ const adminRoutes = require('./routes/adminRoutes');
 
 // ✅ Only one proper CORS setup here:
 app.use(cors({
-  origin: 'http://localhost:3000', // your frontend URL
+  origin: ['http://localhost:3000', 'https://your-netlify-site.netlify.app'], // ✅ Add your Netlify frontend URL here
   credentials: true
 }));
+
 
 
 
