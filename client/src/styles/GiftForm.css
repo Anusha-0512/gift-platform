@@ -1,0 +1,78 @@
+/* styles/GiftForm.css */
+.gift-form-container {
+    max-width: 500px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  }
+  
+  .gift-form-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  form div {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: #555;
+  }
+  
+  input {
+    width: 100%;
+    padding: 0.6rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  button {
+    width: 100%;
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #4b0082;
+  }
+  
+  .recommendation-box {
+    margin-top: 2rem;
+    background-color: #f0f4f8;
+    padding: 1rem;
+    border-left: 4px solid #6a0dad;
+    border-radius: 0.5rem;
+  }
+  
+  .recommendation-box h3 {
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  .more-suggestions-button {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .more-suggestions-button button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  
