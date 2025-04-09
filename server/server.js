@@ -14,10 +14,22 @@ const adminRoutes = require('./routes/adminRoutes');
 
 // ✅ Only one proper CORS setup here:
 
+const allowedOrigins = [
+  'http://localhost:3000',
+  'https://meek-paletas-395784.netlify.app', // ✅ actual live Netlify URL
+];
+
 app.use(cors({
-  origin:'https://main--meek-paletas-395784.netlify.app' , // your deployed frontend // ✅ add your frontend link here
-  credentials: true
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true,
 }));
+
 
 
 
