@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'http://localhost:5000/api', // your backend URL
+  baseURL: 'https://gift-platform.onrender.com', // your backend URL
   withCredentials: true, // enable if you're using cookies/auth
 });
 
