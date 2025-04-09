@@ -28,7 +28,7 @@ export default function GiftForm() {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/ai/recommendations",
+        "https://gift-platform.onrender.com/api/ai/recommendations",
         { prompt: currentPrompt },
         {
           headers: {

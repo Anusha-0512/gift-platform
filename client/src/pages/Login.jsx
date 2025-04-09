@@ -22,7 +22,7 @@ export default function Login() {
     e.preventDefault();
 
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/login", formData);
+      const res = await axios.post("https://gift-platform.onrender.com/api/auth/login", formData);
 
       console.log("Login successful:", res.data);
       const { token, user } = res.data;

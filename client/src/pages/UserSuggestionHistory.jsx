@@ -7,7 +7,7 @@ const UserSuggestionHistory = ({ userId }) => {
   useEffect(() => {
     const fetchHistory = async () => {
       const token = localStorage.getItem("token");
-      const res = await axios.get(`http://localhost:5000/api/ai/admin/user-suggestions/${userId}`, {
+      const res = await axios.get(`https://gift-platform.onrender.com/api/ai/admin/user-suggestions/${userId}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setHistory(res.data);
