@@ -13,8 +13,9 @@ const adminRoutes = require('./routes/adminRoutes');
 
 
 // ✅ Only one proper CORS setup here:
+
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://your-netlify-site.netlify.app'], // ✅ Add your Netlify frontend URL here
+  origin: ['http://localhost:3000', 'https://meek-paletas-395784.netlify.app'], // ✅ add your frontend link here
   credentials: true
 }));
 
