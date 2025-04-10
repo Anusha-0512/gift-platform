@@ -25,9 +25,11 @@ export default function Register() {
       });
 
       console.log("Registered successfully:", res.data);
+      alert("✅ Registered successfully! Please login.");
       navigate("/login"); // ✅ Redirect after success
     } catch (err) {
       console.error("Registration failed:", err.response?.data?.message || err.message);
+      alert("❌ Registration failed: " + message);
     }
   };
 
