@@ -29,7 +29,7 @@ export default function Register() {
       navigate("/login"); // ✅ Redirect after success
     } catch (err) {
       console.error("Registration failed:", err.response?.data?.message || err.message);
-      alert("❌ Registration failed: " + message);
+      //alert("❌ Registration failed: " + message);
     }
   };
 
